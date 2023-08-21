@@ -89,3 +89,43 @@ body {
 .letters2 {
   font-size: 32px;
 }
+
+@media screen and (max-width: 768px) {
+  /* Adjust font sizes for better readability on smaller screens */
+  body {
+    font-size: 16px; /* Adjust as needed */
+  }
+
+  .notebook-header h1 {
+    font-size: 36px; /* Adjust as needed */
+  }
+
+  /* Adjust margins and paddings to create spacing on mobile */
+  .notebook-page {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .notebook-content {
+    grid-template-columns: repeat(1, 1fr); /* Change to a single column */
+    grid-gap: 20px; /* Increase spacing between grid items */
+  }
+
+  /* Center align text in .notebook-content a */
+  .notebook-content a {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Adjust image size for better display on mobile */
+  .notebook-content img {
+    max-width: 100%; /* Make images fit within their container */
+    height: auto;
+  }
+  
+  /* Specific styling for .letters1 and .letters2 on mobile */
+  .letters1,
+  .letters2 {
+    font-size: 24px; /* Adjust as needed */
+  }
+}

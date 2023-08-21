@@ -126,3 +126,19 @@ body {
 .button-small:hover {
   background-color: rgb(111, 111, 126);
 }
+
+@media screen and (max-width: 768px) {
+  /* Existing styles from previous media query */
+
+  /* Adjust font size and padding for better display on mobile */
+  .poem {
+    font-size: 24px; /* Adjust as needed */
+    padding: 10px; /* Adjust padding for better spacing */
+  }
+
+  /* Adjust font size and padding for the small buttons */
+  .button-small {
+    font-size: 24px; /* Adjust as needed */
+    padding: 4px 8px; /* Adjust padding for better spacing */
+  }
+}
