@@ -1,0 +1,128 @@
+/* style.css */
+@font-face {
+  font-family: 'Julia_Handwritten_2';
+  src: url('Julia_Handwritten_2.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Julia_Handwritten_2', Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+}
+
+.notebook-page {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  padding: 20px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.notebook-header {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.notebook-header h1 {
+  font-size: 64px;
+  color: #000000;
+  margin: 0;
+}
+
+.notebook-content {
+  margin-top: 20px;
+  display: flex; /* Use flexbox to arrange elements side by side */
+  align-items: flex-start; /* Align elements at the top of the container */
+}
+
+/* Add drop shadow effect when hovering over the images */
+.notebook-content a:hover img {
+  transform: scale(1.1); /* Scale the image slightly on hover */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); /* Add drop shadow effect */
+}
+
+.notebook-content a {
+  display: flex; /* Use flexbox to control grid item's layout */
+  flex-direction: column; /* Stack content vertically */
+  text-decoration: none;
+  color: #333; /* Text color */
+  border: 1px solid #ccc; /* Optional: Add border to visually separate the grid items */
+  padding: 10px;
+  min-height: 200px; /* Minimum height to ensure the grid items are of equal height */
+}
+
+.notebook-content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the images are cropped and maintain aspect ratio */
+  margin-bottom: 10px; /* Optional: Add spacing between the image and the text */
+}
+
+/* Specific styling for .letters1 class */
+.letters1 {
+  font-size: 32px;
+}
+
+/* Specific styling for .letters2 class */
+.letters2 {
+  font-size: 32px;
+}
+
+/* Additional styling for the text box on the right side */
+.text-box {
+  background-color: #f0f0f0; /* Background color for the text box */
+  padding: 10px; /* Add padding around the text box content */
+}
+
+.text-box p {
+  font-size: 35px; /* Increase the font size for the text inside the text box */
+}
+
+.text-boxS p {
+  font-size: 20px; /* Increase the font size for the text inside the text box */
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+.poem {
+  background-color: #f0f0f0; /* Grey background color */
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the div horizontally */
+  padding: 20px; /* Add some padding around the content */
+  font-size: 31px;
+  white-space: pre-line; /* Preserve line breaks and display content line-by-line */
+  line-height: .6; /* Adjust the line-height to reduce spacing between lines */
+  text-align: center; /* Center the content within each line */
+}
+
+/* Styles for the small buttons */
+.button-small {
+  padding: 6px 12px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 34px;
+  border-radius: 4px;
+  display: inline-block; /* Display the buttons in a line */
+  margin-right: 10px; /* Add some spacing between the buttons */
+  line-height: 1; /* Adjust the line height to make the buttons vertically aligned */
+}
+
+.button-small:last-child {
+  margin-right: 0; /* Remove the right margin from the last button */
+}
+
+.button-small:hover {
+  background-color: rgb(111, 111, 126);
+}

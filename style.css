@@ -1,0 +1,91 @@
+/* style.css */
+@font-face {
+  font-family: 'Julia_Handwritten_2';
+  src: url('Julia_Handwritten_2.ttf') format('truetype');
+  
+}
+
+body {
+  font-family: 'Julia_Handwritten_2', Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+}
+
+.notebook-page {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  padding: 20px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.notebook-header {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.notebook-header h1 {
+  font-size: 64px;
+  color: #000000;
+  margin: 0;
+}
+
+.notebook-content {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+  grid-gap: 10px; /* Add spacing between the grid items */
+}
+
+/* Add drop shadow effect when hovering over the images */
+.notebook-content a:hover img {
+  transform: scale(1.1); /* Scale the image slightly on hover */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); /* Add drop shadow effect */
+}
+
+.notebook-content a {
+  display: flex; /* Use flexbox to control grid item's layout */
+  flex-direction: column; /* Stack content vertically */
+
+
+  text-decoration: none;
+  color: #333; /* Text color */
+  border: 1px solid #ccc; /* Optional: Add border to visually separate the grid items */
+  padding: 10px;
+  min-height: 200px; /* Minimum height to ensure the grid items are of equal height */
+}
+
+.notebook-content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the images are cropped and maintain aspect ratio */
+  margin-bottom: 10px; /* Optional: Add spacing between the image and the text */
+  
+}
+
+/* Specific styling for .letters1 class */
+.letters1 {
+  font-size: 32px;
+}
+
+/* Specific styling for .letters2 class */
+.letters2 {
+  font-size: 32px;
+}
