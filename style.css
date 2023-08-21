@@ -111,6 +111,7 @@ body {
   .notebook-content a {
     min-height: auto; /* Let items adjust their height based on content for mobile */
     padding: 20px; /* Increase padding for mobile layout */
+    display: block; /* Change display property to block for elongated layout */
   }
 
   /* Specific styling for .letters1 and .letters2 on mobile */
