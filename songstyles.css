@@ -127,3 +127,39 @@ body {
   background-color: rgb(111, 111, 126);
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 18px; /* Adjust the base font size for mobile screens */
+  }
+
+  .notebook-header h1 {
+    font-size: 42px; /* Decrease header font size on mobile */
+  }
+
+  .notebook-content {
+    flex-direction: column; /* Stack content vertically on mobile */
+    align-items: center; /* Center align items on mobile */
+  }
+
+  .notebook-content a {
+    min-height: auto; /* Reset minimum height for grid items on mobile */
+  }
+
+  .text-box p {
+    font-size: 28px; /* Adjust font size for text box on mobile */
+  }
+
+  .text-boxS p {
+    font-size: 16px; /* Adjust font size for smaller text box on mobile */
+  }
+
+  .poem {
+    font-size: 24px; /* Adjust font size for poem on mobile */
+    line-height: 1.2; /* Adjust line height for better readability on mobile */
+  }
+
+  .button-small {
+    font-size: 24px; /* Adjust font size for buttons on mobile */
+    padding: 4px 8px; /* Adjust padding for buttons on mobile */
+  }
+}

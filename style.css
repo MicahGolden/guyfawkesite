@@ -89,4 +89,33 @@ body {
 .letters2 {
   font-size: 32px;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust the base font size for mobile */
+  }
 
+  .notebook-page {
+    max-width: 90%; /* Adjust the maximum width for better mobile layout */
+    padding: 10px; /* Reduce padding for better mobile layout */
+  }
+
+  .notebook-header h1 {
+    font-size: 36px; /* Decrease the header font size for mobile */
+  }
+
+  .notebook-content {
+    grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout for mobile */
+    grid-gap: 20px; /* Increase spacing between items for mobile */
+  }
+
+  .notebook-content a {
+    min-height: auto; /* Let items adjust their height based on content for mobile */
+    padding: 20px; /* Increase padding for mobile layout */
+  }
+
+  /* Specific styling for .letters1 and .letters2 on mobile */
+  .letters1,
+  .letters2 {
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+}
