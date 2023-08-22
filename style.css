@@ -1,10 +1,16 @@
-/* style.css */
+/* Define custom font */
 @font-face {
   font-family: 'Julia_Handwritten_2';
   src: url('Julia_Handwritten_2.ttf') format('truetype');
-  
 }
 
+/* Reset default styling */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
 body {
   font-family: 'Julia_Handwritten_2', Arial, sans-serif;
   background-color: #f0f0f0;
@@ -13,9 +19,10 @@ body {
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+  background-attachment: fixed;
 }
 
+/* Notebook styles */
 .notebook-page {
   max-width: 800px;
   margin: 20px auto;
@@ -35,49 +42,56 @@ body {
 
 .links {
   display: flex;
-  justify-content: space-between;
+  font-size: 30px;
+  justify-content: center; /* Center the links horizontally */
+  gap: 20px; /* Adjust the gap between links */
+  margin-top: 10px; /* Add some top margin for spacing */
+  font-size: 60px;
 }
 
-
+.links1 {
+  display: flex;
+  font-size: 30px;
+  justify-content: center; /* Center the links horizontally */
+  gap: 20px; /* Adjust the gap between links */
+  margin-top: 10px; /* Add some top margin for spacing */
+  font-size: 40px;
+}
 
 
 .notebook-header h1 {
   font-size: 64px;
-  color: #000000;
+  color: #000;
   margin: 0;
 }
 
 .notebook-content {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
-  grid-gap: 10px; /* Add spacing between the grid items */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
-/* Add drop shadow effect when hovering over the images */
 .notebook-content a:hover img {
-  transform: scale(1.1); /* Scale the image slightly on hover */
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); /* Add drop shadow effect */
+  transform: scale(1.1);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 .notebook-content a {
-  display: flex; /* Use flexbox to control grid item's layout */
-  flex-direction: column; /* Stack content vertically */
-
-
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
-  color: #333; /* Text color */
-  border: 1px solid #ccc; /* Optional: Add border to visually separate the grid items */
+  color: #333;
+  border: 1px solid #ccc;
   padding: 10px;
-  min-height: 200px; /* Minimum height to ensure the grid items are of equal height */
+  min-height: 200px;
 }
 
 .notebook-content img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensure the images are cropped and maintain aspect ratio */
-  margin-bottom: 10px; /* Optional: Add spacing between the image and the text */
-  
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 /* Specific styling for .letters1 class */
@@ -89,34 +103,24 @@ body {
 .letters2 {
   font-size: 32px;
 }
-@media (max-width: 768px) {
-  body {
-    font-size: 16px; /* Adjust the base font size for mobile */
-  }
 
-  .notebook-page {
-    max-width: 90%; /* Adjust the maximum width for better mobile layout */
-    padding: 10px; /* Reduce padding for better mobile layout */
-  }
-
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
   .notebook-header h1 {
-    font-size: 36px; /* Decrease the header font size for mobile */
+    font-size: 48px;
   }
 
   .notebook-content {
-    grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout for mobile */
-    grid-gap: 20px; /* Increase spacing between items for mobile */
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: calc(100vh - 100px);
   }
 
   .notebook-content a {
-    min-height: auto; /* Let items adjust their height based on content for mobile */
-    padding: 20px; /* Increase padding for mobile layout */
-    display: block; /* Change display property to block for elongated layout */
-  }
-
-  /* Specific styling for .letters1 and .letters2 on mobile */
-  .letters1,
-  .letters2 {
-    font-size: 24px; /* Adjust font size for mobile */
+    min-height: 0;
+    padding: 20px;
+    border: none;
+    box-shadow: none;
   }
 }
