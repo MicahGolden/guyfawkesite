@@ -1,8 +1,9 @@
 /* Define custom font */
-@font-face {
-  font-family: 'Julia_Handwritten_2';
-  src: url('Julia_Handwritten_2.ttf') format('truetype');
+* {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5; /* Adjust the value to add more vertical spacing */
 }
+
 
 /* Reset default styling */
 body, h1, h2, h3, p {
