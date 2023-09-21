@@ -1,9 +1,8 @@
 /* Define custom font */
 * {
   font-family: 'Courier New', Courier, monospace;
-  line-height: 1.5; /* Adjust the value to add more vertical spacing */
+  line-height: 1.5;
 }
-
 
 /* Reset default styling */
 body, h1, h2, h3, p {
@@ -21,6 +20,21 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+/* Header styles */
+.heading {
+  background-color: rgb(196, 186, 186);
+}
+
+.heading h1 {
+  font-size: 64px;
+  color: #000;
+  margin: 0;
+}
+
+.links p {
+  font-size: 30px;
 }
 
 /* Notebook styles */
@@ -43,26 +57,19 @@ body {
 
 .links {
   display: flex;
-  font-size: 30px;
-  justify-content: center; /* Center the links horizontally */
-  gap: 20px; /* Adjust the gap between links */
-  margin-top: 10px; /* Add some top margin for spacing */
   font-size: 40px;
-}
-
-.heading {
-  background-color: rgb(196, 186, 186)
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
 }
 
 .links1 {
   display: flex;
-  font-size: 30px;
-  justify-content: center; /* Center the links horizontally */
-  gap: 20px; /* Adjust the gap between links */
-  margin-top: 10px; /* Add some top margin for spacing */
   font-size: 40px;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
 }
-
 
 .notebook-header h1 {
   font-size: 64px;
@@ -70,6 +77,24 @@ body {
   margin: 0;
 }
 
+/* Latest Item styles */
+.latest-item {
+  background-color: rgb(188, 182, 182);
+  border: 30px solid black;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.latest-item a:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.description {
+  font-size: 30px;
+}
+
+/* Notebook content styles */
 .notebook-content {
   margin-top: 20px;
   display: grid;
@@ -104,14 +129,9 @@ body {
   font-size: 32px;
 }
 
-/* Specific styling for .letters2 class */
-.letters2 {
-  font-size: 32px;
-}
-
 /* Media query for mobile responsiveness */
 @media (max-width: 600px) {
-  .notebook-header h1 {
+  .heading h1 {
     font-size: 48px;
   }
 
@@ -127,5 +147,14 @@ body {
     padding: 20px;
     border: none;
     box-shadow: none;
+  }
+  
+  .latest-item {
+    border-width: 20px;
+    padding: 10px;
+  }
+  
+  .description {
+    font-size: 24px;
   }
 }
